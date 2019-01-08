@@ -18,8 +18,6 @@ add_action( 'wp_enqueue_scripts', 'basic_bmlt_enqueue_scripts' );
 
 require_once dirname( __FILE__ ) . '/inc/class-tgm-plugin-activation.php';
 
-function basic_bmlt_register_plugins () {
-
 add_action( 'tgmpa_register', 'basic_bmlt_register_required_plugins' );
 	$plugins = array(
 		array(
@@ -160,7 +158,6 @@ $config = array(
 	);
 
 	tgmpa( $plugins, $config );
-}
 
 /*    --------------- End TGM Plugin  ----------------   */
 
